@@ -7,7 +7,9 @@
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Writes workouts to Apple Health</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Simple Workout Timer</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
