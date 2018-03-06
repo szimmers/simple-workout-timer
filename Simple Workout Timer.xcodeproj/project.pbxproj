@@ -19,7 +19,6 @@
 		AC8EABF21EAEA860002DD041 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EABF11EAEA860002DD041 /* HealthKitSetupAssistant.swift */; };
 		AC8EABF41EAEA86A002DD041 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EABF31EAEA86A002DD041 /* ProfileDataStore.swift */; };
 		AC8EABF91EAEA895002DD041 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EABF71EAEA895002DD041 /* HKBiologicalSex+StringRepresentation.swift */; };
-		AC8EABFA1EAEA895002DD041 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EABF81EAEA895002DD041 /* HKBloodType+StringRepresentation.swift */; };
 		AC8EABFD1EAEA8B2002DD041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8EABFB1EAEA8B2002DD041 /* Main.storyboard */; };
 		AC8EAC081EAEA8E5002DD041 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EAC071EAEA8E5002DD041 /* Workout.swift */; };
 		ACF4F9201EB0FFED0031154C /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4F91F1EB0FFED0031154C /* UserHealthProfile.swift */; };
@@ -41,7 +40,6 @@
 		AC8EABF11EAEA860002DD041 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitSetupAssistant.swift; path = "Prancercise Tracker/HealthKitSetupAssistant.swift"; sourceTree = SOURCE_ROOT; };
 		AC8EABF31EAEA86A002DD041 /* ProfileDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileDataStore.swift; path = "Prancercise Tracker/ProfileDataStore.swift"; sourceTree = SOURCE_ROOT; };
 		AC8EABF71EAEA895002DD041 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HKBiologicalSex+StringRepresentation.swift"; path = "Prancercise Tracker/HKBiologicalSex+StringRepresentation.swift"; sourceTree = SOURCE_ROOT; };
-		AC8EABF81EAEA895002DD041 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HKBloodType+StringRepresentation.swift"; path = "Prancercise Tracker/HKBloodType+StringRepresentation.swift"; sourceTree = SOURCE_ROOT; };
 		AC8EABFC1EAEA8B2002DD041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Prancercise Tracker/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		AC8EAC011EAEA8C8002DD041 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Prancercise Tracker/Info.plist"; sourceTree = SOURCE_ROOT; };
 		AC8EAC071EAEA8E5002DD041 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Workout.swift; path = "Prancercise Tracker/Workout.swift"; sourceTree = SOURCE_ROOT; };
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				AC8EABF71EAEA895002DD041 /* HKBiologicalSex+StringRepresentation.swift */,
-				AC8EABF81EAEA895002DD041 /* HKBloodType+StringRepresentation.swift */,
 			);
 			name = "HealthKit Extensions";
 			sourceTree = "<group>";
@@ -215,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC8EABFA1EAEA895002DD041 /* HKBloodType+StringRepresentation.swift in Sources */,
 				AC8EABF01EAEA855002DD041 /* WorkoutsTableViewController.swift in Sources */,
 				9F270C321EBE47EB0075412F /* WorkoutSession.swift in Sources */,
 				AC8EABED1EAEA855002DD041 /* CreateWorkoutTableViewController.swift in Sources */,

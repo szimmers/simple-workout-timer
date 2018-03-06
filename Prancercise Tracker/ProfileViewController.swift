@@ -53,7 +53,6 @@ class ProfileViewController: UITableViewController {
   }
   
   @IBOutlet private var ageLabel:UILabel!
-  @IBOutlet private var bloodTypeLabel:UILabel!
   @IBOutlet private var biologicalSexLabel:UILabel!
   @IBOutlet private var weightLabel:UILabel!
   @IBOutlet private var heightLabel:UILabel!
@@ -62,17 +61,16 @@ class ProfileViewController: UITableViewController {
   private let userHealthProfile = UserHealthProfile()
   
   private func updateHealthInfo() {
-    loadAndDisplayAgeSexAndBloodType()
+    loadAndDisplayProfileInfo()
     loadAndDisplayMostRecentWeight()
     loadAndDisplayMostRecentHeight()
   }
   
-  private func loadAndDisplayAgeSexAndBloodType() {
+  private func loadAndDisplayProfileInfo() {
 	do {
-		let userAgeSexAndBloodType = try ProfileDataStore.getAgeSexAndBloodType()
-		userHealthProfile.age = userAgeSexAndBloodType.age
-		userHealthProfile.biologicalSex = userAgeSexAndBloodType.biologicalSex
-		userHealthProfile.bloodType = userAgeSexAndBloodType.bloodType
+		let profileInfo = try ProfileDataStore.getProfileInfo()
+		userHealthProfile.age = profileInfo.age
+		userHealthProfile.biologicalSex = profileInfo.biologicalSex
 		updateLabels()
 	} catch let error {
 		self.displayAlert(for: error)
@@ -86,10 +84,6 @@ class ProfileViewController: UITableViewController {
 	
 	if let biologicalSex = userHealthProfile.biologicalSex {
 		biologicalSexLabel.text = biologicalSex.stringRepresentation
-	}
-	
-	if let bloodType = userHealthProfile.bloodType {
-		bloodTypeLabel.text = bloodType.stringRepresentation
 	}
 	
 	if let weight = userHealthProfile.weightInKilograms {
